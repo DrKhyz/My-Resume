@@ -12,8 +12,8 @@ const MyRouter = () => {
 			<div>
 				<MenuBar />
 				<Switch>
-					<Route path='/' exact component={Main} />
-					<Route path='/resume' exact component={Resume} />
+					<Route path='/' exact component={() => <Main infos={Data.infos} />} />
+					<Route path='/resume' exact component={() => <Resume resume={Data.resume} />} />
 					<Route path='/portfolio' exact component={() => <Portfolio projects={Data.projects} />} />
 				</Switch>
 			</div>

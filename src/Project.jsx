@@ -10,14 +10,12 @@ const Project = props => {
 				<CardSubtitle>{props.desc}</CardSubtitle>
 				<CardSubtitle>Techno : {props.technos.map(tech => tech + ' ')}</CardSubtitle>
 				<CardText>{props.text}</CardText>
-				<div className='mb-4'>
-					<Button href={props.url} target='blank'>
-						Go to website
-					</Button>{' '}
-					<Button href={props.src} target='blank'>
-						<i className='fab fa-github' />
-					</Button>
-				</div>
+				<Button className='m-1' href={props.url} target='blank'>
+					Go to website
+				</Button>
+				<Button className='m-1' href={props.src} target='blank'>
+					<i className='fab fa-github' />
+				</Button>
 				<CardSubtitle>
 					Date : from {props.startDate} to {props.endDate}
 				</CardSubtitle>

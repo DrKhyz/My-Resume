@@ -1,5 +1,8 @@
 {
-	"lastUpdated": "2017-10-20",
+	"lastUpdate": "2017-10-20",
+	"infos": {
+		"pic": "/images/profil.jpg"
+	},
 	"projects": [
 		{
 			"title": "Super Heros Combat",

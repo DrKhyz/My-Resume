@@ -1,14 +1,13 @@
 import React from 'react';
 import { Row, Col, Container, Button, CardImg } from 'reactstrap';
 import { Link } from 'react-router-dom';
-import profilPic from './assets/profil.jpg';
 
-const Main = () => {
+const Main = props => {
 	return (
 		<Container className='text-center'>
 			<Row>
 				<Col xs={{ size: 10, offset: 1 }} sm={{ size: 6, offset: 3 }}>
-					<CardImg src={profilPic} className='profilPicStyle my-5' />
+					<CardImg src={props.infos.pic} className='profilPicStyle my-5' />
 				</Col>
 			</Row>
 			<Row>
