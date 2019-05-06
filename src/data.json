@@ -14,16 +14,40 @@
 			"src": "https://github.com/DrKhyz/WCS-SuperHerosFighters"
 		},
 		{
-			"title": "Super Heros Combat",
-			"img": "/images/previewHerosProject.png",
-			"desc": "Fictive project No2 for WildCode School.",
+			"title": "Bandimanchoeuf",
+			"img": "/images/banditmanchot.png",
+			"desc": "Fictive project for a 24h hackathon for WildCode School",
 			"technos": ["React", "Axios"],
-			"startDate": "01-04-2019",
-			"endDate": "02-05-2019",
-			"team": "1",
-			"text": "Using API, I make card. I've created a combat algoritm to make them fighting.",
-			"url": "https://super-heros-combat.netlify.com/",
-			"src": ""
+			"startDate": "25-04-2019",
+			"endDate": "26-04-2019",
+			"team": "5",
+			"text": "Using API to select eggs, we made a bandimanchot like in 24. We finished 1st with this prototype.",
+			"url": "https://bandimanchoeuf.netlify.com/",
+			"src": "https://github.com/DrKhyz/Bandimanchot"
+		},
+		{
+			"title": "Les Conanars",
+			"img": "/images/conanars.png",
+			"desc": "Fictive project for WildCode School",
+			"technos": ["html", "css"],
+			"startDate": "05-03-2019",
+			"endDate": "15-03-2019",
+			"team": "3",
+			"text": "We created a website on imposed theme, as a blog",
+			"url": "https://drkhyz.github.io/Conanars/",
+			"src": "https://github.com/DrKhyz/Conanars"
+		},
+		{
+			"title": "Cryptids",
+			"img": "/images/cryptids.png",
+			"desc": "Fictive project for WildCode School",
+			"technos": ["html", "css"],
+			"startDate": "19-02-2019",
+			"endDate": "22-02-2019",
+			"team": "3",
+			"text": "We created a website on cryptids theme",
+			"url": "https://drkhyz.github.io/Cryptids/",
+			"src": "https://github.com/DrKhyz/Cryptids"
 		}
 	],
 	"resume": [{}, {}, {}]
