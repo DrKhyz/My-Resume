@@ -1,5 +1,6 @@
 import React from 'react';
 import { Row, Col, Container, Button } from 'reactstrap';
+import { Link } from 'react-router-dom';
 
 const Main = () => {
 	return (
@@ -12,7 +13,9 @@ const Main = () => {
 			</Row>
 			<Row>
 				<Col xs='12' lg='6'>
-					<Button color='primary'>Resume</Button>
+					<Link to='resume'>
+						<Button color='primary'>Resume</Button>
+					</Link>
 				</Col>
 				<Col xs='12' lg='6'>
 					<Button color='primary'>Portfolio</Button>
