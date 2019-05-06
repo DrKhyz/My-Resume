@@ -22,21 +22,27 @@ const MenuBar = () => {
 				<NavbarToggler onClick={() => setIsOpen(!isOpen)} />
 				<Collapse isOpen={isOpen} navbar>
 					<Nav className='ml-auto' navbar>
-						<NavItem>
-							<NavLink href='https://github.com/DrKhyz/'>GitHub</NavLink>
-						</NavItem>
-						<NavItem>
-							<NavLink href='https://www.linkedin.com/in/jonathan-galvao-diniz/'>LinkedIn</NavLink>
-						</NavItem>
 						<UncontrolledDropdown nav inNavbar>
 							<DropdownToggle nav caret>
 								Pages
 							</DropdownToggle>
 							<DropdownMenu right>
-								<DropdownItem href='/resume'>My resume</DropdownItem>
+								<DropdownItem href='/resume'>Resume</DropdownItem>
 								<DropdownItem href='/portfolio'>PortFolio</DropdownItem>
 							</DropdownMenu>
 						</UncontrolledDropdown>
+						<NavItem>
+							<NavLink href='https://github.com/DrKhyz/' target='blank'>
+								<i className='fab fa-github mr-1' />
+								GitHub
+							</NavLink>
+						</NavItem>
+						<NavItem>
+							<NavLink href='https://www.linkedin.com/in/jonathan-galvao-diniz/' target='blank'>
+								<i className='fab fa-linkedin mr-1' />
+								LinkedIn
+							</NavLink>
+						</NavItem>
 					</Nav>
 				</Collapse>
 			</Navbar>

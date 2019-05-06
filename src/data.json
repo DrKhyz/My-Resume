@@ -1,0 +1,30 @@
+{
+	"lastUpdated": "2017-10-20",
+	"projects": [
+		{
+			"title": "Super Heros Combat",
+			"img": "/images/previewHerosProject.png",
+			"desc": "Fictive project No2 for WildCode School.",
+			"technos": ["React", "Axios"],
+			"startDate": "01-04-2019",
+			"endDate": "02-05-2019",
+			"team": "1",
+			"text": "Using API, I make card. I've created a combat algoritm to make them fighting.",
+			"url": "https://super-heros-combat.netlify.com/",
+			"src": "https://github.com/DrKhyz/WCS-SuperHerosFighters"
+		},
+		{
+			"title": "Super Heros Combat",
+			"img": "/images/previewHerosProject.png",
+			"desc": "Fictive project No2 for WildCode School.",
+			"technos": ["React", "Axios"],
+			"startDate": "01-04-2019",
+			"endDate": "02-05-2019",
+			"team": "1",
+			"text": "Using API, I make card. I've created a combat algoritm to make them fighting.",
+			"url": "https://super-heros-combat.netlify.com/",
+			"src": ""
+		}
+	],
+	"resume": [{}, {}, {}]
+}
