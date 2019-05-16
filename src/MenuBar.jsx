@@ -1,53 +1,49 @@
-import React, { useState } from 'react';
-import {
-	Collapse,
-	Navbar,
-	NavbarToggler,
-	NavbarBrand,
-	Nav,
-	NavItem,
-	NavLink,
-	UncontrolledDropdown,
-	DropdownToggle,
-	DropdownMenu,
-	DropdownItem,
-} from 'reactstrap';
+import React, { useState } from 'react'
+import { Collapse, Navbar, NavbarToggler, Nav } from 'reactstrap'
+import MenuButton from './MenuButton'
 
 const MenuBar = () => {
-	const [isOpen, setIsOpen] = useState(false);
-	return (
-		<div>
-			<Navbar color='light' light expand='md' className='text-center'>
-				<NavbarBrand href='/'>Main</NavbarBrand>
-				<NavbarToggler onClick={() => setIsOpen(!isOpen)} />
-				<Collapse isOpen={isOpen} navbar>
-					<Nav className='ml-auto' navbar>
-						<UncontrolledDropdown nav inNavbar>
-							<DropdownToggle nav caret>
-								Pages
-							</DropdownToggle>
-							<DropdownMenu right>
-								<DropdownItem href='/resume'>Resume</DropdownItem>
-								<DropdownItem href='/portfolio'>PortFolio</DropdownItem>
-							</DropdownMenu>
-						</UncontrolledDropdown>
-						<NavItem>
-							<NavLink href='https://github.com/DrKhyz/' target='blank'>
-								<i className='fab fa-github mr-1' />
-								GitHub
-							</NavLink>
-						</NavItem>
-						<NavItem>
-							<NavLink href='https://www.linkedin.com/in/jonathan-galvao-diniz/' target='blank'>
-								<i className='fab fa-linkedin mr-1' />
-								LinkedIn
-							</NavLink>
-						</NavItem>
-					</Nav>
-				</Collapse>
-			</Navbar>
-		</div>
-	);
-};
+  const [isOpen, setIsOpen] = useState(false)
+  return (
+    <div>
+      <Navbar color="dark" dark expand="md" className="text-center">
+        <NavbarToggler className="mx-auto" onClick={() => setIsOpen(!isOpen)} />
+        <Collapse isOpen={isOpen} navbar>
+          <Nav className=" d-flex m-2 mx-auto" navbar>
+            <MenuButton label="Main" link="/" />
+            <MenuButton
+              label="Resume"
+              link="/resume"
+              icon="fas fa-file mr-1"
+              openNewTab
+            />
+            <MenuButton
+              label="Portfolio"
+              link="/portfolio"
+              icon="fas fa-file mr-1"
+            />
+            <MenuButton
+              label="linkedIn"
+              link="/linkedin"
+              icon="fab fa-linkedin mr-1"
+              openNewTab
+            />
+            <MenuButton
+              label="GitHub"
+              link="/github"
+              icon="fab fa-github mr-1"
+              openNewTab
+            />
+            <MenuButton
+              label="Contact"
+              link="/resume/contact"
+              icon="fas fa-address-book mr-1"
+            />
+          </Nav>
+        </Collapse>
+      </Navbar>
+    </div>
+  )
+}
 
-export default MenuBar;
+export default MenuBar
