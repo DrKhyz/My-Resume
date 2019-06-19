@@ -1,9 +1,9 @@
-import React, { useState } from 'react'
-import { Collapse, Navbar, NavbarToggler, Nav } from 'reactstrap'
-import MenuButton from './MenuButton'
+import React, { useState } from "react";
+import { Collapse, Navbar, NavbarToggler, Nav } from "reactstrap";
+import MenuButton from "./MenuButton";
 
 const MenuBar = () => {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <div>
       <Navbar color="dark" dark expand="md" className="text-center">
@@ -11,18 +11,18 @@ const MenuBar = () => {
         <Collapse isOpen={isOpen} navbar>
           <Nav className=" d-flex m-2 mx-auto" navbar>
             <MenuButton label="Main" link="/" />
-            <MenuButton
+            {/* <MenuButton
               label="Resume"
               link="/resume"
               icon="fas fa-file mr-1"
               openNewTab
-            />
+            /> */}
             <MenuButton
               label="Portfolio"
               link="/portfolio"
               icon="fas fa-file mr-1"
             />
-            <MenuButton
+            {/* <MenuButton
               label="linkedIn"
               link="/linkedin"
               icon="fab fa-linkedin mr-1"
@@ -38,12 +38,12 @@ const MenuBar = () => {
               label="Contact"
               link="/resume/contact"
               icon="fas fa-address-book mr-1"
-            />
+            /> */}
           </Nav>
         </Collapse>
       </Navbar>
     </div>
-  )
-}
+  );
+};
 
-export default MenuBar
+export default MenuBar;
