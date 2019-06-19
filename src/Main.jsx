@@ -1,5 +1,5 @@
-import React from 'react'
-import { Row, Col, Container, CardImg } from 'reactstrap'
+import React from "react";
+import { Row, Col, Container, CardImg } from "reactstrap";
 
 const Main = props => {
   return (
@@ -12,15 +12,16 @@ const Main = props => {
       <Row>
         <Col xs="12" lg={{ size: 6, offset: 3 }}>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-            culpa repellendus dolor, delectus consectetur quae, dolorum eveniet
-            reiciendis autem incidunt nam soluta? Provident harum eligendi
-            itaque voluptatem, aliquam cumque at?
+            Autodidacte dans le développement web, j'ai décidé, après 9 ans de
+            travail dans la restauration, de me tourner pleinement dans ce
+            domaine. Sortie d'une formation intense portant principalement sur
+            React et NodeJS, je suis motivé et intéressé par l'apprentissage de
+            nouvelles technologies.
           </p>
         </Col>
       </Row>
     </Container>
-  )
-}
+  );
+};
 
-export default Main
+export default Main;
